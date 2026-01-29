@@ -69,13 +69,15 @@ body {
     background: var(--bg-color);
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
 }
 
 /* --- BACKGROUND ORBS --- */
 body::before,
 body::after {
-    content: '';
+    content: "";
     position: fixed;
     border-radius: 50%;
     filter: blur(80px);
@@ -178,7 +180,9 @@ body::after {
 
     /* FADE LOGIC */
     opacity: 0.3;
-    transition: opacity 0.4s ease, transform 0.3s ease;
+    transition:
+        opacity 0.4s ease,
+        transform 0.3s ease;
 }
 
 .mini-map:hover {
@@ -237,7 +241,9 @@ section {
     scroll-snap-align: start;
     opacity: 0;
     transform: scale(0.95);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
 @media (max-width: 1300px) {
@@ -311,7 +317,8 @@ section.viewed p {
     color: var(--text-main);
     opacity: 0;
     transform: translateY(50px);
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transition:
+        transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
         background-color 0.3s,
         box-shadow 0.3s,
         opacity 0.6s ease;
@@ -406,7 +413,9 @@ section.viewed .card:nth-child(6) {
     position: relative;
     z-index: 2;
     border: 1px solid var(--card-border);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
     cursor: help;
@@ -618,11 +627,11 @@ body.focus-mode .theme-controls {
 
     0%,
     100% {
-        transform: translateY(0)
+        transform: translateY(0);
     }
 
     50% {
-        transform: translateY(-15px)
+        transform: translateY(-15px);
     }
 }
 
