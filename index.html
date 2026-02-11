@@ -1,38 +1,43 @@
 <!doctype html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeskHealth | Final Pitch Deck</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeskHealth | Final Pitch Deck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div class="theme-controls">
+      <button
+        class="theme-btn active"
+        onclick="setTheme('light')"
+        title="Light"
+      >
+        🌞
+      </button>
+      <button class="theme-btn" onclick="setTheme('dark')" title="Dark">
+        🌙
+      </button>
+      <button class="theme-btn" onclick="setTheme('contrast')" title="Pres">
+        🎓
+      </button>
+    </div>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;500;700;900&display=swap"
-    rel="stylesheet" />
+    <div class="mini-map" id="miniMap"></div>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="theme-controls">
-    <button class="theme-btn active" onclick="setTheme('light')" title="Light">
-      🌞
-    </button>
-    <button class="theme-btn" onclick="setTheme('dark')" title="Dark">
-      🌙
-    </button>
-    <button class="theme-btn" onclick="setTheme('contrast')" title="Pres">
-      🎓
-    </button>
-  </div>
-
-  <div class="mini-map" id="miniMap"></div>
-
-  <div class="deck" id="deck">
-    <section data-title="Intro" class="active viewed">
-      <div class="float-anim" style="
+    <div class="deck" id="deck">
+      <section data-title="Intro" class="active viewed">
+        <div
+          class="float-anim"
+          style="
             background: rgba(224, 242, 254, 0.8);
             backdrop-filter: blur(5px);
             color: var(--primary);
@@ -40,22 +45,27 @@
             border-radius: 20px;
             font-weight: bold;
             margin-bottom: 1rem;
-          ">
-        Design Thinking & Innovation
-      </div>
-      <h1 style="
+          "
+        >
+          Design Thinking & Innovation
+        </div>
+        <h1
+          style="
             font-size: clamp(3rem, 6vw, 5rem);
             font-weight: 900;
             line-height: 1.1;
             margin-bottom: 1rem;
             color: var(--heading-color);
-          ">
-        DeskHealth
-      </h1>
-      <p>
-        The Desktop Guardian: Bridging the gap between Focus and Well-being.
-      </p>
-      <div class="card" style="
+          "
+        >
+          DeskHealth
+        </h1>
+        <p>
+          The Desktop Guardian: Bridging the gap between Focus and Well-being.
+        </p>
+        <div
+          class="card"
+          style="
             margin-top: 3rem;
             display: flex;
             gap: 1.5rem;
@@ -63,56 +73,68 @@
             flex-wrap: wrap;
             justify-content: center;
             color: var(--text-main);
-          ">
-        <span>Prajwal Rao</span> • <span>Utkarsh Gupta</span> •
-        <span>Mrunmay Urkude</span> • <span>Tanmay Saraf</span> •
-        <span>Garvit Kumar</span>
-      </div>
-    </section>
+          "
+        >
+          <span>Prajwal Rao</span> • <span>Utkarsh Gupta</span> •
+          <span>Mrunmay Urkude</span> • <span>Tanmay Saraf</span> •
+          <span>Garvit Kumar</span>
+        </div>
+      </section>
 
-    <section data-title="Problem">
-      <h2>The Hidden Cost of "Desk Jobs"</h2>
-      <p>
-        We spend nearly a third of our lives sitting. This habit has unseen
-        consequences.
-      </p>
-      <div class="grid">
-        <div class="card danger-glow">
-          <span style="
+      <section data-title="Problem">
+        <h2>The Hidden Cost of "Desk Jobs"</h2>
+        <p>
+          We spend nearly a third of our lives sitting. This habit has unseen
+          consequences.
+        </p>
+        <div class="grid">
+          <div class="card danger-glow">
+            <span
+              style="
                 font-size: 3rem;
                 color: #ef4444;
                 display: block;
                 font-family: &quot;JetBrains Mono&quot;;
-              ">147%</span>
-          <h3>Cardiovascular Risk</h3>
-          <p>Increase in cardiovascular risk due to prolonged sitting.</p>
-        </div>
-        <div class="card" style="border-left-color: #f59e0b">
-          <span style="
+              "
+              >147%</span
+            >
+            <h3>Cardiovascular Risk</h3>
+            <p>Increase in cardiovascular risk due to prolonged sitting.</p>
+          </div>
+          <div class="card" style="border-left-color: #f59e0b">
+            <span
+              style="
                 font-size: 3rem;
                 color: #f59e0b;
                 display: block;
                 font-family: &quot;JetBrains Mono&quot;;
-              ">75%</span>
-          <h3>Dehydration</h3>
-          <p>Of office workers suffer from dehydration.</p>
-        </div>
-        <div class="card" style="border-left-color: #2563eb">
-          <span style="
+              "
+              >75%</span
+            >
+            <h3>Dehydration</h3>
+            <p>Of office workers suffer from dehydration.</p>
+          </div>
+          <div class="card" style="border-left-color: #2563eb">
+            <span
+              style="
                 font-size: 3rem;
                 color: #2563eb;
                 display: block;
                 font-family: &quot;JetBrains Mono&quot;;
-              ">20%</span>
-          <h3>Focus Drop</h3>
-          <p>Cognitive performance declines when dehydrated.</p>
+              "
+              >20%</span
+            >
+            <h3>Focus Drop</h3>
+            <p>Cognitive performance declines when dehydrated.</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section data-title="Persona">
-      <h2>Persona: "Dev" the Developer</h2>
-      <div class="card" style="
+      <section data-title="Persona">
+        <h2>Persona: "Dev" the Developer</h2>
+        <div
+          class="card"
+          style="
             display: flex;
             align-items: center;
             gap: 3rem;
@@ -121,98 +143,110 @@
             flex-wrap: wrap;
             justify-content: center;
             max-width: 900px;
-          ">
-        <div style="font-size: 6rem">👨‍💻</div>
-        <div style="text-align: left">
-          <h3 style="margin-bottom: 1rem">Profile</h3>
-          <p style="margin: 0"><b>Age:</b> 20 Years (CS Student)</p>
-          <p style="margin: 0"><b>Habit:</b> 8+ Hours coding/day</p>
-          <hr style="
+          "
+        >
+          <div style="font-size: 6rem">👨‍💻</div>
+          <div style="text-align: left">
+            <h3 style="margin-bottom: 1rem">Profile</h3>
+            <p style="margin: 0"><b>Age:</b> 20 Years (CS Student)</p>
+            <p style="margin: 0"><b>Habit:</b> 8+ Hours coding/day</p>
+            <hr
+              style="
                 margin: 1rem 0;
                 border: 0;
                 border-top: 1px solid var(--text-muted);
-              " />
-          <h3 style="margin-bottom: 1rem">Pain Points</h3>
-          <ul style="
+              "
+            />
+            <h3 style="margin-bottom: 1rem">Pain Points</h3>
+            <ul
+              style="
                 list-style: none;
                 color: var(--text-muted);
                 line-height: 1.8;
-              ">
-            <li>
-              ❌ <b>Forgetful Hydration:</b> Only drinks when headache
-              strikes.
-            </li>
-            <li>
-              ❌ <b>Unconscious Slouching:</b> Leans into screen while
-              debugging.
-            </li>
-            <li>❌ <b>Notification Fatigue:</b> Ignores phone apps.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section data-title="Challenge">
-      <h2>Defining the Challenge</h2>
-      <div style="max-width: 900px; text-align: center; width: 100%">
-        <div class="card" style="margin-bottom: 2rem; border-left: 8px solid var(--accent)">
-          <h3>Problem Statement</h3>
-          <p style="font-size: 1.2rem; font-weight: 500">
-            "Desk workers need a way to maintain physical health without
-            breaking their focus."
-          </p>
-        </div>
-        <div class="grid" style="grid-template-columns: 1fr 1fr">
-          <div class="card">
-            <h3>Sustained Focus</h3>
-            <p>Minimizing disruptions to deep work sessions.</p>
-          </div>
-          <div class="card">
-            <h3>Habit Formation</h3>
-            <p>Fostering long-term healthy behaviors via passive cues.</p>
+              "
+            >
+              <li>
+                ❌ <b>Forgetful Hydration:</b> Only drinks when headache
+                strikes.
+              </li>
+              <li>
+                ❌ <b>Unconscious Slouching:</b> Leans into screen while
+                debugging.
+              </li>
+              <li>❌ <b>Notification Fatigue:</b> Ignores phone apps.</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section data-title="Solution">
-      <h2>The Solution Ecosystem</h2>
-      <p>A physical desktop system designed for <b>Passive Monitoring</b>.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>💡 Passive Monitoring</h3>
-          <p>
-            No wearables. No apps to open. It works in the background using
-            sensors.
-          </p>
+      <section data-title="Challenge">
+        <h2>Defining the Challenge</h2>
+        <div style="max-width: 900px; text-align: center; width: 100%">
+          <div
+            class="card"
+            style="margin-bottom: 2rem; border-left: 8px solid var(--accent)"
+          >
+            <h3>Problem Statement</h3>
+            <p style="font-size: 1.2rem; font-weight: 500">
+              "Desk workers need a way to maintain physical health without
+              breaking their focus."
+            </p>
+          </div>
+          <div class="grid" style="grid-template-columns: 1fr 1fr">
+            <div class="card">
+              <h3>Sustained Focus</h3>
+              <p>Minimizing disruptions to deep work sessions.</p>
+            </div>
+            <div class="card">
+              <h3>Habit Formation</h3>
+              <p>Fostering long-term healthy behaviors via passive cues.</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h3>⚡ Smart Triggers</h3>
-          <p>
-            Alerts ONLY activate when needed, optimizing for minimal
-            disruption.
-          </p>
-        </div>
-        <div class="card">
-          <h3>🔊 Instant Feedback</h3>
-          <p>
-            Physical buzzers and lights are harder to ignore than phone
-            notifications.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section data-title="Feature 1">
-      <h2>Feature 1: Smart Hydration</h2>
-      <div style="
+      <section data-title="Solution">
+        <h2>The Solution Ecosystem</h2>
+        <p>A physical desktop system designed for <b>Passive Monitoring</b>.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>💡 Passive Monitoring</h3>
+            <p>
+              No wearables. No apps to open. It works in the background using
+              sensors.
+            </p>
+          </div>
+          <div class="card">
+            <h3>⚡ Smart Triggers</h3>
+            <p>
+              Alerts ONLY activate when needed, optimizing for minimal
+              disruption.
+            </p>
+          </div>
+          <div class="card">
+            <h3>🔊 Instant Feedback</h3>
+            <p>
+              Physical buzzers and lights are harder to ignore than phone
+              notifications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section data-title="Feature 1">
+        <h2>Feature 1: Smart Hydration</h2>
+        <div
+          style="
             display: flex;
             gap: 2rem;
             align-items: center;
             flex-wrap: wrap;
             justify-content: center;
-          ">
-        <div class="float-anim" style="
+          "
+        >
+          <div
+            class="float-anim"
+            style="
               width: 300px;
               height: 300px;
               background: var(--card-bg);
@@ -223,65 +257,82 @@
               justify-content: center;
               align-items: center;
               box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
-            ">
-          <div style="font-size: 5rem">💧</div>
-          <h3>Pressure Coaster</h3>
+            "
+          >
+            <div style="font-size: 5rem">💧</div>
+            <h3>Pressure Coaster</h3>
+          </div>
+          <div style="text-align: left; flex: 1; min-width: 300px">
+            <div
+              class="card"
+              style="margin-bottom: 1rem; border-left-color: var(--accent)"
+            >
+              <h3>Technology: Load Cell + HX711</h3>
+              <p>
+                Uses a <b>Load Cell</b> with an <b>HX711 amplifier</b> for
+                precision weight detection.
+              </p>
+            </div>
+            <div
+              class="card"
+              style="margin-bottom: 1rem; border-left-color: var(--accent)"
+            >
+              <h3>Logic: Sip Detection</h3>
+              <p>
+                If weight remains unchanged for <b>30 minutes</b>, trigger
+                alert.
+              </p>
+            </div>
+            <div class="card" style="border-left-color: var(--accent)">
+              <h3>Logic: Refill Prompt</h3>
+              <p>When weight hits 0 (Empty), prompt user to refill.</p>
+            </div>
+          </div>
         </div>
-        <div style="text-align: left; flex: 1; min-width: 300px">
-          <div class="card" style="margin-bottom: 1rem; border-left-color: var(--accent)">
-            <h3>Technology: Load Cell + HX711</h3>
-            <p>
-              Uses a <b>Load Cell</b> with an <b>HX711 amplifier</b> for
-              precision weight detection.
-            </p>
-          </div>
-          <div class="card" style="margin-bottom: 1rem; border-left-color: var(--accent)">
-            <h3>Logic: Sip Detection</h3>
-            <p>
-              If weight remains unchanged for <b>30 minutes</b>, trigger
-              alert.
-            </p>
-          </div>
-          <div class="card" style="border-left-color: var(--accent)">
-            <h3>Logic: Refill Prompt</h3>
-            <p>When weight hits 0 (Empty), prompt user to refill.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section data-title="Feature 2">
-      <h2>Feature 2: Posture Guardian</h2>
-      <div style="
+      <section data-title="Feature 2">
+        <h2>Feature 2: Posture Guardian</h2>
+        <div
+          style="
             display: flex;
             gap: 2rem;
             align-items: center;
             flex-wrap: wrap-reverse;
             justify-content: center;
-          ">
-        <div style="text-align: left; flex: 1; min-width: 300px">
-          <div class="card" style="margin-bottom: 1rem; border-left-color: var(--primary)">
-            <h3>Technology: Ultrasonic</h3>
-            <p>
-              <b>HC-SR04 Sensor</b> mounted on monitor measures distance to
-              face.
-            </p>
+          "
+        >
+          <div style="text-align: left; flex: 1; min-width: 300px">
+            <div
+              class="card"
+              style="margin-bottom: 1rem; border-left-color: var(--primary)"
+            >
+              <h3>Technology: Ultrasonic</h3>
+              <p>
+                <b>HC-SR04 Sensor</b> mounted on monitor measures distance to
+                face.
+              </p>
+            </div>
+            <div
+              class="card"
+              style="margin-bottom: 1rem; border-left-color: var(--primary)"
+            >
+              <h3>Logic: Slouch Detect</h3>
+              <p>
+                System sets <b>Baseline Distance</b>. If deviation >
+                <b>3 seconds</b> → "Sit Up" Alert.
+              </p>
+            </div>
+            <div class="card" style="border-left-color: var(--primary)">
+              <h3>Logic: Sedentary Break</h3>
+              <p>
+                If sitting for <b>45 minutes</b> straight → "Take a Walk" Alert.
+              </p>
+            </div>
           </div>
-          <div class="card" style="margin-bottom: 1rem; border-left-color: var(--primary)">
-            <h3>Logic: Slouch Detect</h3>
-            <p>
-              System sets <b>Baseline Distance</b>. If deviation >
-              <b>3 seconds</b> → "Sit Up" Alert.
-            </p>
-          </div>
-          <div class="card" style="border-left-color: var(--primary)">
-            <h3>Logic: Sedentary Break</h3>
-            <p>
-              If sitting for <b>45 minutes</b> straight → "Take a Walk" Alert.
-            </p>
-          </div>
-        </div>
-        <div class="float-anim" style="
+          <div
+            class="float-anim"
+            style="
               width: 300px;
               height: 300px;
               background: var(--card-bg);
@@ -292,198 +343,262 @@
               justify-content: center;
               align-items: center;
               box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
-            ">
-          <div style="font-size: 5rem">📏</div>
-          <h3>Distance Monitor</h3>
-        </div>
-      </div>
-    </section>
-
-    <section data-title="Diagram">
-      <h2>Technical Architecture</h2>
-      <p>Hardware Architecture & Data Flow (Hover components)</p>
-
-      <div class="diagram-container interactive-zone">
-        <div id="dynamic-info" class="info-popup">
-          <h3 id="info-title">Component</h3>
-          <p id="info-desc">Description</p>
-        </div>
-
-        <div class="d-col">
-          <div class="d-box d-sensor arrow-right" data-title="Load Cell"
-            data-desc="Precision weight sensor. Measures exact water volume.">
-            Load Cell<br /><span style="font-size: 0.8rem; font-weight: normal">(Digital Weight)</span>
-          </div>
-
-          <div class="d-box d-sensor arrow-right" data-title="HC-SR04"
-            data-desc="Ultrasonic pulse sensor. Measures distance to face.">
-            HC-SR04<br /><span style="font-size: 0.8rem; font-weight: normal">(Digital Pulse)</span>
-          </div>
-
-          <div class="d-box d-sensor arrow-right" style="border-left-color: orange" data-title="5V Power"
-            data-desc="USB or Battery regulated power supply.">
-            5V Power<br /><span style="font-size: 0.8rem; font-weight: normal">(USB/Battery)</span>
+            "
+          >
+            <div style="font-size: 5rem">📏</div>
+            <h3>Distance Monitor</h3>
           </div>
         </div>
+      </section>
 
-        <div class="d-box d-micro" data-title="Arduino Nano"
-          data-desc="Central Logic Unit. Processes sensor data (C++).">
-          <div>
-            <div style="font-size: 1.2rem; margin-bottom: 0.5rem">🧠</div>
-            ARDUINO<br />NANO
-          </div>
-        </div>
+      <section data-title="Architecture">
+        <h2>Technical Architecture</h2>
+        <p>Hardware Architecture & Data Flow (Hover components)</p>
 
-        <div class="d-col">
-          <div class="d-box d-output arrow-left" data-title="HX711" data-desc="Amplifier.">
-            HX711<br /><span style="font-size: 0.8rem; font-weight: normal">Amplification</span>
+        <div class="diagram-container interactive-zone">
+          <div id="dynamic-info" class="info-popup">
+            <h3 id="info-title">Component</h3>
+            <p id="info-desc">Description</p>
           </div>
 
-          <div class="d-box d-output arrow-left" style="border-left-color: var(--alert)" data-title="Buzzer"
-            data-desc="Active Piezo. Provides immediate audio alerts.">
-            Active Buzzer<br /><span style="font-size: 0.8rem; font-weight: normal">(Audio Alert)</span>
+          <div class="d-col">
+            <div
+              class="d-box d-sensor arrow-right"
+              data-title="Load Cell"
+              data-desc="Precision weight sensor. Measures exact water volume."
+            >
+              Load Cell<br /><span
+                style="font-size: 0.8rem; font-weight: normal"
+                >(Digital Weight)</span
+              >
+            </div>
+
+            <div
+              class="d-box d-sensor arrow-right"
+              data-title="HC-SR04"
+              data-desc="Ultrasonic pulse sensor. Measures distance to face."
+            >
+              HC-SR04<br /><span style="font-size: 0.8rem; font-weight: normal"
+                >(Digital Pulse)</span
+              >
+            </div>
+
+            <div
+              class="d-box d-sensor arrow-right"
+              style="border-left-color: orange"
+              data-title="5V Power"
+              data-desc="USB or Battery regulated power supply."
+            >
+              5V Power<br /><span style="font-size: 0.8rem; font-weight: normal"
+                >(USB/Battery)</span
+              >
+            </div>
           </div>
 
-          <div class="d-box d-output arrow-left" style="border-left-color: #d946ef" data-title="RGB LEDs"
-            data-desc="Peripheral vision cues (Red/Green/Blue).">
-            RGB LEDs<br /><span style="font-size: 0.8rem; font-weight: normal">(Color Indicators)</span>
+          <div
+            class="d-box d-micro"
+            data-title="Arduino Nano"
+            data-desc="Central Logic Unit. Processes sensor data (C++)."
+          >
+            <div>
+              <div style="font-size: 1.2rem; margin-bottom: 0.5rem">🧠</div>
+              ARDUINO<br />NANO
+            </div>
+          </div>
+
+          <div class="d-col">
+            <div
+              class="d-box d-output arrow-left"
+              data-title="HX711"
+              data-desc="Amplifier."
+            >
+              HX711<br /><span
+                style="font-size: 0.8rem; font-weight: normal"
+                >Amplification</span
+              >
+            </div>
+
+            <div
+              class="d-box d-output arrow-left"
+              style="border-left-color: var(--alert)"
+              data-title="Buzzer"
+              data-desc="Active Piezo. Provides immediate audio alerts."
+            >
+              Active Buzzer<br /><span
+                style="font-size: 0.8rem; font-weight: normal"
+                >(Audio Alert)</span
+              >
+            </div>
+
+            <div
+              class="d-box d-output arrow-left"
+              style="border-left-color: #d946ef"
+              data-title="RGB LEDs"
+              data-desc="Peripheral vision cues (Red/Green/Blue)."
+            >
+              RGB LEDs<br /><span style="font-size: 0.8rem; font-weight: normal"
+                >(Color Indicators)</span
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section data-title="Implementation">
-      <h2>Technical Implementation</h2>
-      <p>Built with robust hardware components for reliability.</p>
-      <div class="grid" style="grid-template-columns: repeat(3, 1fr)">
-        <div class="card">
-          <h3>🧠 Microcontroller</h3>
-          <p><b>Arduino Nano</b>: The brain processing sensor data.</p>
+      <section data-title="Design">
+        <h2>Product Design</h2>
+        <p>Visualizing the physical form factor of DeskHealth.</p>
+        <div class="card" style="padding: 1rem; background: rgba(255,255,255,0.7); display: flex; justify-content: center; align-items: center; max-width: 900px; width: 100%;">
+          <img 
+            src="https://i.ibb.co/9kVFFyJ8/Whats-App-Image-2026-02-11-at-1-34-24-PM.jpg" 
+            alt="Product Design Visualization" 
+            style="max-width: 100%; max-height: 60vh; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);"
+          >
         </div>
-        <div class="card">
-          <h3>👀 Sensors</h3>
-          <p><b></b> <b>HC-SR04</b> (Ultrasonic).</p>
-        </div>
-        <div class="card">
-          <h3>📢 Outputs</h3>
-          <p><b>Active Buzzer</b> (Audio) & <b>RGB LEDs</b> (Visual).</p>
-        </div>
-        <div class="card">
-          <h3>📈Amplification</h3>
-          <p><b>HX711</b>: Amplifies the input.</p>
-        </div>
-        <div class="card">
-          <h3>🔌 Power</h3>
-          <p><b>5V Supply</b> via USB or Battery.</p>
-        </div>
-        <div class="card">
-          <h3>💻 Logic</h3>
-          <p><b>C++</b> Firmware with timers and state machines.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section data-title="Logic Flow">
-      <h2>System Logic Flow</h2>
-      <div style="
+      <section data-title="Implementation">
+        <h2>Technical Implementation</h2>
+        <p>Built with robust hardware components for reliability.</p>
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr)">
+          <div class="card">
+            <h3>🧠 Microcontroller</h3>
+            <p><b>Arduino Nano</b>: The brain processing sensor data.</p>
+          </div>
+          <div class="card">
+            <h3>👀 Sensors</h3>
+            <p><b></b>  <b>HC-SR04</b> (Ultrasonic).</p>
+          </div>
+          <div class="card">
+            <h3>📢 Outputs</h3>
+            <p><b>Active Buzzer</b> (Audio) & <b>RGB LEDs</b> (Visual).</p>
+          </div>
+          <div class="card">
+            <h3>📈Amplification</h3>
+            <p><b>HX711</b>: Amplifies the input.</p>
+          </div>
+          <div class="card">
+            <h3>🔌 Power</h3>
+            <p><b>5V Supply</b> via USB or Battery.</p>
+          </div>
+          <div class="card">
+            <h3>💻 Logic</h3>
+            <p><b>C++</b> Firmware with timers and state machines.</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-title="Logic Flow">
+        <h2>System Logic Flow</h2>
+        <div
+          style="
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 0.5rem;
             transform: scale(0.9);
-          ">
-        <div class="flow-step">Start: Initialize System</div>
+          "
+        >
+          <div class="flow-step">Start: Initialize System</div>
 
-        <div style="
+          <div
+            style="
               display: flex;
               gap: 1rem;
               justify-content: center;
               flex-wrap: wrap;
               margin-bottom: 1rem;
-            ">
-          <div class="card" style="
+            "
+          >
+            <div
+              class="card"
+              style="
                 padding: 1rem 1.5rem;
                 border-left: 4px solid var(--accent);
                 width: 260px;
                 text-align: center;
-              ">
-            <b>1. Calibrate Weight</b><br />
-            <span style="font-size: 0.9rem; color: var(--text-muted)">"Place Water Bottle"</span><br />
-            (Tare Load Cell)
-          </div>
+              "
+            >
+              <b>1. Calibrate Weight</b><br />
+              <span style="font-size: 0.9rem; color: var(--text-muted)"
+                >"Place Water Bottle"</span
+              ><br />
+              (Tare Load Cell)
+            </div>
 
-          <div class="card" style="
+            <div
+              class="card"
+              style="
                 padding: 1rem 1.5rem;
                 border-left: 4px solid var(--primary);
                 width: 260px;
                 text-align: center;
-              ">
-            <b>2. Calibrate Posture</b><br />
-            <span style="font-size: 0.9rem; color: var(--text-muted)">"Sit Up Straight"</span><br />
-            (Set Baseline Dist)
-          </div>
-        </div>
-
-        <div style="font-size: 2rem; color: #94a3b8; margin: -10px 0">↓</div>
-
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; transform: scale(0.9);">
-
-          <div class="flow-step">Loop: Monitor Presence</div>
-
-          <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
-
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-              <div class="flow-step" style="width: 220px; border: 2px solid var(--primary); padding: 0.8rem;">
-                Check Posture & Time
-              </div>
-              <div class="card"
-                style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--primary);">
-                Is Dist
-                < (Baseline - 10cm)?<br />
-                <b>YES:</b> Buzzer Alert 🔊
-              </div>
-              <div class="card"
-                style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--primary);">
-                Sitting > 45 mins?<br />
-                <b>YES:</b> "Take a Walk" Alert 🚶‍♂️
-              </div>
+              "
+            >
+              <b>2. Calibrate Posture</b><br />
+              <span style="font-size: 0.9rem; color: var(--text-muted)"
+                >"Sit Up Straight"</span
+              ><br />
+              (Set Baseline Dist)
             </div>
-
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-              <div class="flow-step" style="width: 220px; border: 2px solid var(--accent); padding: 0.8rem;">
-                Check Hydration
-              </div>
-              <div class="card"
-                style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--alert);">
-                Is Weight == 0?<br />
-                <b>YES:</b> "Refill" Prompt ⚠️
-              </div>
-              <div class="card"
-                style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--accent);">
-                No Sip > 30 mins?<br />
-                <b>YES:</b> LED Alert 💡
-              </div>
-            </div>
-
           </div>
-        </div>
-    </section>
 
-    <section data-title="Future">
-      <h2>Future Scope & Conclusion</h2>
-      <div class="grid" style="margin-bottom: 3rem">
-        <div class="card">
-          <h3>🎮 Gamification</h3>
-          <p>Earn "Health Points" for good habits.</p>
-        </div>
-        <div class="card">
-          <h3>☁️ IoT Integration</h3>
-          <p>
-            Upgrade to <b>ESP32</b> to send data to a mobile app via Wi-Fi.
-          </p>
-        </div>
+          <div style="font-size: 2rem; color: #94a3b8; margin: -10px 0">↓</div>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; transform: scale(0.9);">
+  
+  <div class="flow-step">Loop: Monitor Presence</div>
+
+  <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
+    
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <div class="flow-step" style="width: 220px; border: 2px solid var(--primary); padding: 0.8rem;">
+        Check Posture & Time
       </div>
-      <h3 class="float-anim" style="
+      <div class="card" style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--primary);">
+        Is Dist < (Baseline - 10cm)?<br />
+        <b>YES:</b> Buzzer Alert 🔊
+      </div>
+      <div class="card" style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--primary);">
+        Sitting > 45 mins?<br />
+        <b>YES:</b> "Take a Walk" Alert 🚶‍♂️
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <div class="flow-step" style="width: 220px; border: 2px solid var(--accent); padding: 0.8rem;">
+        Check Hydration
+      </div>
+      <div class="card" style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--alert);">
+        Is Weight == 0?<br />
+        <b>YES:</b> "Refill" Prompt ⚠️
+      </div>
+      <div class="card" style="padding: 1rem; width: 300px; font-size: 0.9rem; border-left-color: var(--accent);">
+        No Sip > 30 mins?<br />
+        <b>YES:</b> LED Alert 💡
+      </div>
+    </div>
+
+  </div>
+</div>
+      </section>
+
+      <section data-title="Future">
+        <h2>Future Scope & Conclusion</h2>
+        <div class="grid" style="margin-bottom: 3rem">
+          <div class="card">
+            <h3>🎮 Gamification</h3>
+            <p>Earn "Health Points" for good habits.</p>
+          </div>
+          <div class="card">
+            <h3>☁️ IoT Integration</h3>
+            <p>
+              Upgrade to <b>ESP32</b> to send data to a mobile app via Wi-Fi.
+            </p>
+          </div>
+        </div>
+        <h3
+          class="float-anim"
+          style="
             color: var(--primary);
             max-width: 800px;
             text-align: center;
@@ -491,37 +606,43 @@
             backdrop-filter: blur(10px);
             padding: 2rem;
             border-radius: 20px;
-          ">
-        "DeskHealth isn't just a gadget; it's a habit-building companion."
-      </h3>
-    </section>
-  </div>
-  <section data-title="Demo">
-    <h2>Live Logic Simulator</h2>
-    <p>Connect your Arduino Nano to visualize the logic in real-time.</p>
-    <div class="console" id="console">
-      <div>> System Ready...</div>
-      <div>> Waiting for Serial Connection...</div>
+          "
+        >
+          "DeskHealth isn't just a gadget; it's a habit-building companion."
+        </h3>
+      </section>
     </div>
-    <div style="
+    <section data-title="Demo">
+      <h2>Live Logic Simulator</h2>
+      <p>Connect your Arduino Nano to visualize the logic in real-time.</p>
+      <div class="console" id="console">
+        <div>> System Ready...</div>
+        <div>> Waiting for Serial Connection...</div>
+      </div>
+      <div
+        style="
           display: flex;
           gap: 1rem;
           flex-wrap: wrap;
           justify-content: center;
-        ">
-      <button class="btn btn-primary" id="connectBtn">
-        🔌 Connect Hardware
-      </button>
-      <button class="btn btn-danger" onclick="sim('SLOUCH', 'alert')">
-        Test Slouch
-      </button>
-      <button class="btn btn-primary" style="background: var(--accent)" onclick="sim('SIP', 'success')">
-        Test Sip
-      </button>
-    </div>
-  </section>
-  <script src="script.js"></script>
+        "
+      >
+        <button class="btn btn-primary" id="connectBtn">
+          🔌 Connect Hardware
+        </button>
+        <button class="btn btn-danger" onclick="sim('SLOUCH', 'alert')">
+          Test Slouch
+        </button>
+        <button
+          class="btn btn-primary"
+          style="background: var(--accent)"
+          onclick="sim('SIP', 'success')"
+        >
+          Test Sip
+        </button>
+      </div>
+    </section>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
